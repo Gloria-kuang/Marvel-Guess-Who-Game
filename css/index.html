@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Guess Who: Marvel Character</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Guess</h1>
+        <img class="header__logo" src="../assets/Marvel_Logo.jpg">
+        <h1 class="header__title">Characters</h1>
+        <span class="score" id="score"></span>
+        <span class="answered" id="answered"></span>
+    </header>
+    <main class="main">
+        <h2 class="question" id=question >Which of the following is ....</h2>
+        <div class="pop-up">
+            <p class="pop-up__text">Wow! You are a Marvel Mega-Fan!</p>
+        </div>
+        <div class="card-container">
+
+            <div class="card card--front" id="card1">
+                <img class="card__image" id="card--1" src="../assets/place_holder.jpg">
+            </div>
+            <div class="card card--front" id="card2">
+                <img class="card__image" id="card--2" src="../assets/place_holder.jpg">
+            </div>
+            <div class="card card--front" id="card3">
+                <img class="card__image" id="card--3" src="../assets/place_holder.jpg">
+            </div>
+        </div>
+        <div class="bar">
+            <div class="bar__progress"></div>
+        </div>
+    </main>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
